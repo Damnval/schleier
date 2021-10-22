@@ -1,6 +1,6 @@
 #Schleier IT Coding Exam.
 
-This repository is a coding exam for Schleier IT that can Verify User upon register and Update Profile.
+This repository is a coding exam for Schleier IT that can Send mail with markDown template, Verify User upon register and Update Profile.
 
 ## Installation
 
@@ -22,6 +22,7 @@ composer install
 
 ```bash
 cp .env.example .env
+php artisan key:generate
 ```
 
 ## Sending Email setup
@@ -50,7 +51,7 @@ php artisan migrate
 ## Run and test Coding Exam
 
 ```bash
-php -S localhost:8000 -t public
+php artisan serve
 ```
 Go to browser and type http://localhost:8000/
 
