@@ -24,14 +24,27 @@ composer install
 cp .env.example .env
 ```
 
+## Sending Email setup
+
+Go to .env and change mail variables
+
+```bash
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=yourUserName
+MAIL_PASSWORD=yourPassword
+MAIL_ENCRYPTION=null
+```
+
 ## Create DataBase 
 
-Go to your sql and create a DB named 'veritas'
+Go to your sql and create a DB named 'schleier'
 
 ## Run migration
 
 ```bash
-php artisan migrate --seed
+php artisan migrate
 ```
 
 ## Run and test Coding Exam
